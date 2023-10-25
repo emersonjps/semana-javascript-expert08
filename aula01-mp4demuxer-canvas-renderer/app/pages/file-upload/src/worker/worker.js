@@ -1,3 +1,6 @@
+import VideoProcessor from "./videoProcessor.js"
+
+
 const qvgaConstraints = {
   width: 320,
   height: 240,
@@ -25,6 +28,8 @@ const encoderConfig = {
   // hardwareAcceleration: 'prefer-hardware',
   // avc: { format: 'annexb'}
 }
+
+const videoProcessor = new VideoProcessor()
 
 onmessage = ({data}) => {
   debugger
